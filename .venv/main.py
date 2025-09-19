@@ -2,7 +2,7 @@ from PIL import Image, ImageFilter, ImageEnhance
 #
 
 with Image.open("blue.jpg") as picture:
-#    picture.show()   #this command opens up the picture viewing program and shows as the picture
+#   picture.show()   #this command opens up the picture viewing program and shows as the picture
 
     black_white = picture.convert('L') #this command makes the original picture black and white
     black_white.save("black_white.jpg") #this command saves the new picture and creates a new picture under the name in the parenthesis
